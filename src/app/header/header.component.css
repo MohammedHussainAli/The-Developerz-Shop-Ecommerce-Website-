@@ -1,0 +1,44 @@
+.logo {
+  height: 80px;
+  margin-left: -120px;
+  margin-top: -5px;
+}
+.section-header {
+  height: 90px;
+}
+.btn {
+  /* -webkit-box-shadow: none;
+    box-shadow: none; */
+  background: #6754e2;
+  color: #fff;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #5e2ced;
+  color: #5038f0;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  margin-top: -4px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 14px;
+    background: #ff0000;
+    color: #fff;
+    padding: 2px 6px;
+    vertical-align: top;
+    margin-left: -6px; 
+}

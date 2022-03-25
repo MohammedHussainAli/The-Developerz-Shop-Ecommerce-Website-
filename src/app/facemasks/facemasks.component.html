@@ -1,0 +1,49 @@
+<!-- <ul>
+    <li *ngFor="let facemask of facemasks">
+        <img src="{{facemask}}" alt="facemasks Images">
+    </li>
+</ul> -->
+
+<div class=container>
+    <div id="proparallax">
+        <img class="two" src="https://static.onecms.io/wp-content/uploads/sites/12/2022/01/13/Best-Face-Mask-Omicron--2000.jpg"  /> 
+      <img class="one" src="https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  /> 
+      <!-- <img class="one" src="https://cdn.shopify.com/s/files/1/0017/0432/9285/products/made4dev-developer-tee-my-coding-tshirt-model_01f50e8e-3792-4bf8-886c-dfee837761f0_grande.jpg?v=1544867907"  /> -->
+      <img class="three" src="https://images.unsplash.com/photo-1586867764343-c1e7ca23b3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+    </div>
+  </div>
+
+
+
+  <div class="row" style="background-color: black; margin: 0;">
+    <div class="col-md-3 col-sm-6" *ngFor="let facemask of facemasks">
+        <!-- <a routerLink="/tshirt/{{tshirt.id}}"></a> -->
+        <div class="product-grid">
+            <div class="product-image">
+                <a  class="image">
+                    <img src="{{facemask.imageUrl1}}">
+                </a>
+                <span class="product-discount-label">{{facemask.discount}}</span>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li><a routerLink=""><i class="fa fa-heart"></i></a></li>
+                </ul>
+                <button routerLink="/face-mask/{{facemask.id}}"  class="add-to-cart" style="text-decoration: none;">Product Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                    <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                  </svg></button>
+            </div>
+            <div class="product-content">
+                <h3 class="title" style="color: #6754e2;">{{facemask.name}}</h3>
+                <p class="rating" >{{facemask.star}}
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>{{facemask.buys}}
+                  </p>
+                <div class="price">&#8377;{{facemask.price}}<span>&#8377;499 </span></div>
+            </div>
+        </div>
+    </div>
+</div>
+  

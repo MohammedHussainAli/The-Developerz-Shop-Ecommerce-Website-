@@ -1,0 +1,16 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('https://cdn.shopify.com/s/files/1/0528/4148/0360/files/IMG_3692_1944x.png?v=1621958527');
+  background-size: cover;
+  background-position: center center;
+}
+.invalid-feedback
+{
+  margin-left: 25px;
+}
+.login{
+    margin-top: -10%;
+}

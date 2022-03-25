@@ -1,0 +1,59 @@
+<nav>
+  <ul class="codehim-menu cute-theme">
+    <li>
+      <a routerLink="" (click)="changeView()"> <i class="fa fa-home icon"></i> </a>
+    </li>
+    <li class="dropdown has-three-item">
+      <a>
+        Trends
+        <div class="arrow"></div>
+      </a>
+      <ul>
+        <li><a routerLink="tshirts">T-Shirts</a></li>
+        <li><a routerLink="summer-wear">Summer-Wear</a></li>
+        <li><a routerLink="baby-clothing">Baby-Clothing</a></li>
+        <!-- <li><a href="#">Opera</a></li> -->
+      </ul>
+    </li>
+    <li class="dropdown has-five-item">
+      <a
+        >Accessories
+        <div class="arrow"></div>
+      </a>
+      <ul class="large">
+        <li><a routerLink="face-masks">Face-Masks</a></li>
+        <li><a routerLink="mugs">Mugs</a></li>
+        <li><a routerLink="bag-packs">Bag-Packs</a></li>
+        <li><a routerLink="wall-arts">Wall-Arts</a></li>
+        <li><a routerLink="sticker">Stickers</a></li>
+      </ul>
+    </li>
+    <li class="dropdown has-two-item">
+      <a
+        >Winter-Collection
+        <div class="arrow"></div>
+      </a>
+      <ul class="large">
+        <li><a routerLink="sweat-shirt">Sweat-Shirts</a></li>
+        <li><a routerLink="hoodies">Hoodies</a></li>
+        <!-- <li><a href="#">Jackets</a></li>
+        <li><a href="#">Track-Pants</a></li>
+        <li><a href="#">Denim-Jackets</a></li> -->
+      </ul>
+    </li>
+    <li class="more-item">
+      <label for="menu-trigger">
+        <span></span>
+        <div class="touch"></div>
+      </label>
+    </li>
+    <span class="codehim-more">
+      <li><a routerLink="about"> About</a></li>
+      <li><a routerLink="contact"> Contact</a></li>
+    </span>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-home *ngIf="view"></app-home> -->
+
+

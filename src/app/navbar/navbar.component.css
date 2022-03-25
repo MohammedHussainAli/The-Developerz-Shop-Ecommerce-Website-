@@ -1,0 +1,142 @@
+* { margin: 0; padding: 0;}
+.codehim-menu{
+	
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ background: #000000;
+ padding: 10px;
+ transition: .3s;
+}
+.codehim-menu a{
+   text-decoration: none;
+   display: inline;
+   
+}
+ul.codehim-menu{
+  list-style: none;
+}
+.codehim-more > li,
+.codehim-menu > li {
+ display: inline;
+ margin: 0;
+  
+} 
+.codehim-more > li > a,
+.codehim-menu > li > a {
+ height: 35px;
+ line-height: 35px;
+ padding: 18px;
+ color: rgb(241, 239, 245);
+ text-decoration: none;
+ outline: 0;
+ 
+}
+.codehim-more > li > a:hover,
+.codehim-menu > li > a:hover {
+ background: rgba(236, 231, 231, 0.2);
+ color: #6754e2;
+ /* border-radius: 10px; */
+}
+.codehim-menu > li.active > a, 
+.codehim-menu > li > a:active, 
+.codehim-menu > .dropdown:hover > a {
+ background: rgba(255, 251, 251, 0.2);
+
+ 
+}
+
+.dropdown {
+ position: relative;
+ 
+}
+.dropdown:hover ul {
+ z-index: 1000;
+ transition: .4s;
+ -webkit-transition: .4s;
+ -moz-transition: .4s;
+  box-shadow: 5px 6px 8px 0px #6754e2;
+  /* border-radius: 10px; */
+}
+.dropdown ul {
+ height: 0;
+ min-height: 0;
+ position: absolute;
+ top: 36px;
+ left: -1px;
+ overflow: hidden;
+ display: block;
+ border-top: 0;
+ background: rgb(5, 3, 3);
+ min-width: 160px;
+ z-index: -1;
+ /* border-radius: 10px; */
+}
+
+.has-one-item:hover ul {min-height: 40px}
+.has-two-item:hover ul {min-height: 80px}
+.has-three-item:hover ul {min-height: 120px}
+.has-four-item:hover ul {min-height: 160px}
+.has-five-item:hover ul {min-height: 200px}
+.has-six-item:hover ul {min-height: 240px}
+.has-seven-item:hover ul {min-height: 280px}
+.has-eight-item:hover ul {min-height: 320px}
+.has-nine-item:hover ul {min-height: 360px}
+.has-ten-item:hover ul {min-height: 400px}
+.has-infinte-item:hover ul{ min-height: 500px; overflow: auto;}
+
+.dropdown ul.large {
+ min-width: 200px;
+}
+.codehim-menu-trigger,
+.trigger,
+.codehim-menu .more-item{
+ display: none;
+}
+.dropdown li {
+ display: block;
+ margin: 0 18px;
+ overflow: visible;
+}
+.dropdown li + li {
+ border-top: 1px dotted #eee;
+}
+.dropdown li a {
+ color: #6754e2;
+ padding: 8px 18px;
+ margin: 0 -18px;
+ display: block;
+}
+.dropdown li a:hover {
+ color: #fff;
+  background: #6754e2;
+  /* border-radius: 5px; */
+  
+}
+.arrow{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-left: 6px;
+  margin-bottom: 2px;
+  border-right: 2px solid rgba(255, 255, 255, .8);
+  border-bottom: 2px solid rgba(255, 255, 255, .8);
+  transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+}
+
+.dropdown:hover .arrow{
+  transform: rotate(222.5deg);
+  transition: .5s;
+  -webkit-transform: rotate(222.5deg);
+  -webkit-transition: .5s;
+  -moz-transform: rotate(222.5deg);
+  -moz-transition: .5s;
+ 
+
+}
+.icon {font-size: 20pt;
+position: relative;
+  
+}
